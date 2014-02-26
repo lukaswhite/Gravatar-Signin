@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Demonstration of the Gravatar Signin form">
+    <meta name="author" content="Lukas White">    
+
+    <title>Gravatar Signin Demo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/signin.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+      .avatar-holder {
+        text-align: center;
+        padding: 1em 0;
+      }
+      #avatar {
+        width: 64px;
+        height: 64px;
+        border-radius: 32px;
+        border: solid 2px #ddd;
+      }
+      .note {
+        margin-top: 2em;
+        text-align: center;        
+      }
+      .note p {
+        font-size: 0.8em;
+        color: #666;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <form id="login" class="form-signin" role="form">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <div class="avatar-holder">
+          <img src="./img/avatar.png" width="64" height="64" id="avatar" />
+        </div>
+        <input type="email" name="email" class="form-control" placeholder="Email address" required autofocus>
+        <input type="password" class="form-control" placeholder="Password" required>
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+
+      <div class="note">
+        <p>NOTE: this form doesn't actually <em>do</em> anything, just demonstrates the use of Gravatar in a form.  Enter your own email address, it doesn't get captured or stored anywhere, and it doesn't matter what you enter as a password.</p>
+      </p>
+
+    </div> <!-- /container -->
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./bower_components/blueimp-md5/js/md5.min.js"></script>
+    <script type="text/javascript" src="./js/signin.js"></script>
+  </body>
+</html>
+
